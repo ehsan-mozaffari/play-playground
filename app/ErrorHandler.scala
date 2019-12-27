@@ -7,6 +7,11 @@ import play.core.SourceMapper
 
 import scala.concurrent.Future
 
+/**
+ * https://code-maze.com/top-rest-api-best-practices/
+ * @param environment
+ * @param sourceMapper
+ */
 @Singleton
 class ErrorHandler(environment: Environment, sourceMapper: Option[SourceMapper] = None)
   extends JsonHttpErrorHandler(environment: Environment, sourceMapper: Option[SourceMapper]) {

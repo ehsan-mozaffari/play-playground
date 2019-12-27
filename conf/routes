@@ -1,4 +1,4 @@
-### NoDocs ###
+### NoDocs ### see the play-swagger test directory for example
 GET        /docs/swagger-ui/*file        controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
 
 ###
