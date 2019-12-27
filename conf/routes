@@ -27,6 +27,18 @@ GET        /                             controllers.HomeController.index
 ###
 GET        /students/:id                 controllers.StudentController.getStudentById(id: Long)
 
+###
+#  summary: add student
+#  tags:
+#    - Student Endpoints
+#  responses:
+#    200:
+#      description: success
+#      name: body
+#      schema:
+#        $ref: '#/definitions/daos.StudentDao'
+###
+POST        /students                 controllers.StudentController.addStudent
 
 ### NoDocs ###
 GET        /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)
